@@ -1,5 +1,6 @@
 # postcss-critical-split (Includes postcss V8)
 NOTE: This repo is a clone of https://github.com/mrnocreativity/postcss-critical-split just with dependencies updated to remove vulnerabilities reported by npm.
+
 A PostCSS plugin that takes existing CSS files and splits out the annotated critical styles into a separate file, inspired by https://github.com/wladston/postcss-split
 
 ![A PostCSS plugin to split your Critical CSS from the rest](https://raw.githubusercontent.com/mrnocreativity/postcss-critical-split/master/critical-split.gif)
