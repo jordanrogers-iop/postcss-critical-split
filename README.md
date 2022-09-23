@@ -47,7 +47,7 @@ If you want to contribute to the project and write additional tests, look into t
 
 ## Usage
 
-## Grunt integration
+### Grunt integration
 Split out CSS into separate files. One containing the critical css and another containing the rest of the styles.
 
 ```javascript
@@ -71,6 +71,7 @@ postcss: {
     }
 ```
 
+### Gulp
 ```javascript
 gulp.src(['**/*.css','!**/*-critical.css'])
 	.pipe(postcss(require('postcss-critical-split')));
