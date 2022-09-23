@@ -1,4 +1,4 @@
-# postcss-critical-split
+# postcss-critical-split (Includes postcss V8)
 A PostCSS plugin that takes existing CSS files and splits out the annotated critical styles into a separate file, inspired by https://github.com/wladston/postcss-split
 
 ![A PostCSS plugin to split your Critical CSS from the rest](https://raw.githubusercontent.com/mrnocreativity/postcss-critical-split/master/critical-split.gif)
