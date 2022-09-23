@@ -47,6 +47,30 @@ If you want to contribute to the project and write additional tests, look into t
 
 ## Usage
 
+## Grunt integration
+Split out CSS into separate files. One containing the critical css and another containing the rest of the styles.
+
+```javascript
+postcss: {
+      critical: {
+        src: ['path_to_source_file.css'],
+        dest: 'path_to_critical_file.css',
+        options: {
+          map: false, // inline sourcemaps
+          processors: [require('@jro11/postcss-critical-split')({ output: 'critical' })],
+        },
+      },
+      rest: {
+        src: ['path_to_source_file.css'],
+        dest: 'path_to_rest_file.css',
+        options: {
+          map: false, // inline sourcemaps
+          processors: [require('@jro11/postcss-critical-split')({ output: 'rest' })],
+        },
+      },
+    }
+```
+
 ```javascript
 gulp.src(['**/*.css','!**/*-critical.css'])
 	.pipe(postcss(require('postcss-critical-split')));
